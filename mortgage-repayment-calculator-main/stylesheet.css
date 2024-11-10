@@ -1,0 +1,165 @@
+label, h1, p ,legend{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 15rem;
+    margin-top: 10px;
+    margin-left: 2rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mortgageamount {
+    width: 32rem;
+}
+
+.icon {
+    color: #333;
+    background: hsl(202, 86%, 94%);
+    padding: 10px;
+    border-radius: 0 4px 4px 0;
+}
+
+.icon_left {
+    color: #333;
+    background: hsl(202, 86%, 94%);
+    padding: 10px;
+    border-radius: 4px 0 0 4px;
+}
+
+input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 0.5rem;
+    width: 0.5rem;
+}
+
+a {
+    color: hsl(200, 24%, 40%);
+}
+
+label {
+    color: hsl(200, 24%, 40%);
+    margin-left: 40px; /* Reduced margin to align better */
+}
+legend{    color: hsl(200, 24%, 40%);
+    padding-top:1rem;
+    padding-bottom:1rem
+}
+
+.form {
+    width: 40rem;
+    margin: auto;
+}
+
+.inputcontainer {
+    margin-top: 20px;
+}
+
+fieldset {
+    border: none;
+    margin-left: 1.3rem;
+}
+
+fieldset > label {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+
+
+.choice {
+    display: flex;
+    justify-content: flex-start;
+    align-items:center; /* Ensures radio button and label are aligned */
+    border: 2px solid hsl(200, 24%, 40%) ;
+    padding:10px;
+    border-radius: 4px;
+    margin-right: 10px;
+    width:30.8rem;
+    margin-bottom:5px
+}
+
+.choice input[type="radio"] {
+    margin-right: 8px; /* Ensures radio button and label are close */
+    transform: scale(2); /* Adjust the value to make the radio buttons larger */
+
+}
+
+.choice label {
+    margin: 0; /* Removes extra margin around the label */
+    padding-left: 5px; /* Small padding to keep label close but not too tight */
+}
+button{
+    display: flex;
+    align-items: center;
+    padding:5px;
+    font-weight: bolder;
+    justify-content: center;
+    width:15rem;
+    border-radius:30px;
+    background-color: hsl(61, 70%, 52%);
+    border-color: transparent;
+    margin-left:2rem;
+    margin-top:2rem
+}
+svg{
+    padding:0px 10px
+}
+.body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center ;
+    align-self: center;
+    margin-top:200px;
+    background-color:hsl(0, 0%, 100%);
+    margin-left:20rem;
+    margin-right:20rem;
+    border-radius: 20px;
+
+
+}
+.left-half{
+    width:48%
+}
+.right-half{
+    width:40rem;
+    background-color: hsl(202, 55%, 16%);
+    z-index: 1;
+    padding:10rem;
+    position: relative;
+    border-radius: 0px 21px 19px 90px;
+-webkit-border-radius: 0px 21px 19px 90px;
+-moz-border-radius: 0px 21px 19px 90px;
+}
+
+html{
+    background-color:hsl(202, 86%, 94%) ;
+}
+.left-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left:2rem;
+    margin-right:2rem
+}

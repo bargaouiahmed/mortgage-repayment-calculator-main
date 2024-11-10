@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Mortgage Repayment Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+    <div class="body">
+    <div class="left-half">
+      <div class="left-title">
+      <h1>Mortgage Calculator</h1>
+      <a href="#">Clear All</a>
+      </div>
+      <div class="form">
+        <div class="form-group">
+          <form action="submit">
+            <!-- Mortgage Amount Input -->
+            <div class="inputcontainer">
+              <label for="mortgageamount">Mortgage Amount</label>
+              <div class="input-group mortgageamount">
+                <span class="icon_left">£</span>
+                <input type="number" id="mortgageamount" class="mortgageamount" required>
+              </div>
+            </div>
+
+            <!-- Mortgage Term Input -->
+            <div class="inputcontainer">
+              <label for="mortgageterm">Mortgage Term</label>
+              <div class="input-group">
+                <input type="number" id="mortgageterm" required>
+                <span class="icon">years</span>
+              </div>
+            </div>
+
+            <!-- Interest Rate Input -->
+            <div class="inputcontainer">
+              <label for="interestrate">Interest Rate</label>
+              <div class="input-group">
+                <input type="number" id="interestrate" name="interestrate" required>
+                <span class="icon">%</span>
+              </div>
+            </div>
+
+            <!-- Mortgage Type Radio Buttons -->
+            <fieldset>
+              <legend>Mortgage Type</legend>
+              <div class="choice">
+                <div>
+                  <input type="radio" id="repayment" name="mortgageType" value="repayment" checked required>
+                </div>
+                <label for="repayment">Repayment</label>
+              </div>
+              <div class="choice">
+                <div>
+                  <input type="radio" id="interest-only" name="mortgageType" value="interest-only" required>
+                </div>
+                <label for="interest-only">Interest Only</label>
+              </div>
+            </fieldset>
+
+            <div class="button">
+              <button type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                  <path fill="#133041" d="M18.75 2.25H5.25a1.5 1.5 0 0 0-1.5 1.5v16.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5V3.75a1.5 1.5 0 0 0-1.5-1.5Zm-10.5 16.5a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25Zm0-3.75a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25ZM12 18.75a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25ZM12 15a1.125 1.125 0 1 1 0-2.25A1.125 1.125 0 0 1 12 15Zm3.75 3.75a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25Zm0-3.75a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25Zm1.5-5.25a.75.75 0 0 1-.75.75h-9a.75.75 0 0 1-.75-.75V6a.75.75 0 0 1 .75-.75h9a.75.75 0 0 1 .75.75v3.75Z"/>
+                </svg> Calculate Repayments
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-half">
+      <!-- Results Section -->
+      <div class="results">
+        <h2>Your Results</h2>
+        <p>Complete the form and click “Calculate Repayments” to see what your monthly repayments would be.</p>
+        <div id="result-details">
+          <p>Your monthly repayments: <span id="monthly-repayments"></span></p>
+          <p>Total you'll repay over the term: <span id="total-repayments"></span></p>
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
